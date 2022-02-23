@@ -5,5 +5,6 @@ $environment = apachesolr_environment_load($env_id);
 if ($environment) {
   $environment['conf']['apachesolr_read_only'] = 0;
   apachesolr_environment_save($environment);
+  var_dump('Update success');
 }
 
